@@ -19,7 +19,7 @@ function expand(element) {
 
 	var callback = function() {
 		element.removeEventListener('transitionend', callback);
-		if (parseInt(element.style.height === moveTo)) {
+		if (parseInt(element.style.height) === moveTo) {
 			element.style.height = null;
 		}
 	};
