@@ -1,26 +1,43 @@
 {
-  "name": "transition-height",
-  "version": "1.0.1",
-  "description": "A micro library for transition from or to auto height",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kasvtv/transition-height.git"
-  },
-  "keywords": [
-    "transition",
-    "height",
-    "css",
-    "expand",
-    "collapse"
-  ],
-  "author": "Kas van 't Veer",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kasvtv/transition-height/issues"
-  },
-  "homepage": "https://github.com/kasvtv/transition-height#readme"
+	"name": "transition-height",
+	"version": "1.0.1",
+	"description": "A micro library for transition from or to auto height",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm run lint && npm run es-check && jest",
+		"lint": "cross-env NODE_ENV=production eslint \"{lib,.}/*.js\"",
+		"es-check": "es-check es5 \"{lib,.}/!(*.test|*.conf).js\" --quiet"
+	},
+	"files": [
+		"**/!(*.test|*.conf|.*).js"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kasvtv/transition-height.git"
+	},
+	"keywords": [
+		"transition",
+		"height",
+		"css",
+		"expand",
+		"collapse"
+	],
+	"author": "Kas van 't Veer",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/kasvtv/transition-height/issues"
+	},
+	"homepage": "https://github.com/kasvtv/transition-height#readme",
+	"devDependencies": {
+		"@types/jest": "^24.0.13",
+		"cross-env": "^5.2.0",
+		"es-check": "^5.0.0",
+		"eslint": "^5.16.0",
+		"eslint-plugin-import": "^2.17.3",
+		"eslint-plugin-jest": "^22.6.4",
+		"jest": "^24.8.0"
+	},
+	"eslintIgnore": [
+		"!.eslintrc.js"
+	]
 }
