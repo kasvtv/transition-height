@@ -1,6 +1,6 @@
 {
 	"name": "transition-height",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A micro library for transition from or to auto height",
 	"main": "index.js",
 	"scripts": {
