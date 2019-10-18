@@ -20,7 +20,7 @@ npm install transition-height
 ## Usage
 
 ```js
-import {toggle, expand, collapse} from 'transition-height';
+import { toggle, expand, collapse } from 'transition-height';
 
 const element = document.getElementById('myElement');
 
@@ -31,15 +31,15 @@ expand(element);
 collapse(element);
 
 // Collapse the element to 100 pixels of height
-collapse(element, 100)
+collapse(element, 100);
 
 // Toggle between expanded and collapsed state
 toggle(element);
 
 // Toggle between expanded and collapsed to 100 pixels
-toggle(element, 100)
+toggle(element, 100);
 
 // Toggle between expanded and collapsed state, save whether or not the element started to collapse or expand
-const isExpanding = toggle(element)
+const isExpanding = toggle(element);
 
 ```
